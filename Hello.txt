@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main()
+{
+ printf("Hello\n");
+ int num,cube;
+ printf("Enter a Number to find the cube\n");
+ scanf("%d",&num);
+ cube=num*num*num;
+ printf("Cube of the Number is %d",cube);
+ 
+}
