@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+  int i=5,a=10;
+  if(i>0)
+  {printf("Number greater than Zero\n");}
+  else
+  {printf("Number less than Zero\n");}
+   
+   a=10 ?printf("yes\n"):printf("No");
+}
