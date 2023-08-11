@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int i,l;
+    printf("Enter the Limit\n");
+    scanf("%d",&l);
+    for(i=0;i<=l;i=i+2)
+    {
+        printf("%d\n",i);
+    }
+}
