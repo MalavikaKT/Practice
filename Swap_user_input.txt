@@ -1,0 +1,15 @@
+#include <stdio.h>
+int swap();
+int swap(){
+    int a,b,temp;
+    printf("Enter 2 Values to be swapped");
+    scanf("%d%d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("After Swapping, a = %d and b=%d",a,b);
+}
+int main() {
+swap();
+    return 0;
+}
