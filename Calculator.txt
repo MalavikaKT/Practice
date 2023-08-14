@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main() {
+    int choice,num1,num2,result;
+    
+    printf("Select Operation \n1.Addition\n2.Multiplication\n3.Substraction\n4.Division\n5.Modulus\n\n");
+    printf("Select your choice number :: ");
+    scanf("%d",&choice);
+    
+    printf("Enter First Operand: ");
+    scanf("%d",&num1);
+    printf("Enter Second Operand: ");
+    scanf("%d",&num2);
+    
+    switch(choice)
+    {
+        case 1:
+            result=num1+num2;
+            printf("The Result = %d ",result);
+            break;
+        case 2:
+            result=num1*num2;
+            printf("The Result = %d ",result);
+            break;
+        case 3:
+            result=num1-num2;
+            printf("The Result = %d ",result);
+            break;
+        case 4:
+            result=num1/num2;
+            printf("The Result = %d ",result);
+            break;
+        case 5:
+            result=num1%num2;
+            printf("The Result = %d ",result);
+            break;
+        default:
+            printf("No such Choice Exists");
+    }
+
+    return 0;
+}
