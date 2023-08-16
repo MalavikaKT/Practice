@@ -3,14 +3,14 @@
 int sum(int,int);
 
 int main() {
-    int a,b;
+    int a,b; //Actual Arguments
     printf("Enter 2 Integers: \n");
     scanf("%d%d",&a,&b);
     sum(a,b);
 return 0;
 }
 
- int sum(int x, int y)
+ int sum(int x, int y) //formal Arguments
     {
         int c;   
         c=x+y;
