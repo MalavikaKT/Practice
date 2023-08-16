@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main() {
+    
+    int large,second,size,i;
+    printf("Enter the array Size: ");
+    scanf("%d",&size);
+    int arr[size];
+    for(i=0;i<size;i++)
+    {
+        printf("Enter the value: ");
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<size;i++){
+        printf("%d\t",arr[i]);
+    }
+    
+    large=arr[0];
+    second=arr[1];
+    
+    for(i=0;i<size;i++)
+    {
+        if(arr[i]>large)
+        {
+        //   printf("largest = %d",arr[i]);  
+            second=large;
+            large=arr[i];
+        }
+        else if(arr[i]>second & arr[i]!=large)
+        {
+            // printf("second = %d",arr[i]);
+            second=arr[i];
+        }
+    }
+    printf("\nLargest Number = %d\nSecond largest = %d",large,second);
+    return 0;
+}
